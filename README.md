@@ -1,1 +1,1 @@
-Baisc Pytohn codes for beginner
+Baisc Python codes for beginner
