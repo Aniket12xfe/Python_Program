@@ -1,1 +1,1 @@
-Baisc Python codes for beginner
+Basic Python codes for beginner
