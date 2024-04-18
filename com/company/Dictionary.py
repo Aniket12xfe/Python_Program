@@ -51,10 +51,11 @@ for x,y in dic.items():    # printing with key value pair differently
 print()
 
 # nested dictionary
-Family_dict = {
-    "Aniket": 8999175577,
-               "Vaishnavi": 9420103801,
-               "Rajendra": 9665247377,
+dict1 = {
+    "Family":{
+        "Aniket": 8999175577,
+        "Vaishnavi": 9420103801,
+        "Rajendra": 9665247377},
                "Friends" :{
                    "Ashwini": 4101006,
                     "Om": 4101015,
@@ -62,4 +63,10 @@ Family_dict = {
                     "Bhavesh": 4101002
                     }
                }
-print(Family_dict)
+print(dict1)
+
+# Zip function to add to datatypes in dictionary
+s1 = "abc"
+s2 = "def"
+s3 = dict(zip(s1, s2))
+print(s3)
