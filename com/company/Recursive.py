@@ -66,3 +66,33 @@ Factor_for_number(n)
 print()
 
 print("-------------------------------------")
+
+def power(a, b):
+    if b == 0:
+        return 1
+
+    ans = a * power(a,b-1)
+    return ans
+
+a = int(input("Enter the a: "))
+b = int(input("Enter the b: "))
+res = power(a, b)
+print(res)
+
+print("-------------------------------------")
+
+def fib(num):
+    if num == 1:
+        return 0
+    elif num == 2:
+        return 1
+    else:
+        return fib(num - 1) + fib(num - 2)
+
+fib_num = int(input("Enter the number for fib: "))
+# nn = fib(fib_num)
+# print(nn)
+# for list
+for i in range(1, n+1):
+    print(i)
+
