@@ -31,7 +31,7 @@ print(result)
 
 print("---------------------------")
 
-# Count frequency of each element in array
+# Count the frequency of each element in an array
 arr = [10,5,10,15,10,5]
 freq = {}
 for item in arr:
@@ -41,7 +41,7 @@ for item in arr:
         freq[item] = 1
 print(freq)
 
-# if we don't use dict in problem then
+# if we don't use dict in a problem then
 n = len(arr)
 visited = [False] * n
 for i in range(n):
@@ -64,7 +64,7 @@ half = n // 2
 arr[:half]=sorted(arr[:half])
 arr[half:]=sorted(arr[half:], reverse=True)
 a1 = arr[:half] + arr[half:]
-print(a1)         # My logic which is now corrected
+print(a1)         # My logic, which is now corrected
 
 # n = len(arr)
 # mid = n // 2
@@ -89,7 +89,7 @@ print(a1)         # My logic which is now corrected
 
 print("---------------------------")
 
-# Rotate array by K elements : Block Swap Algorithm
+# Rotate array by K elements: Block Swap Algorithm
 
 def rotate_array(arr1, k):
     n1 = len(arr1)
@@ -102,7 +102,7 @@ def rotate_array(arr1, k):
     # # Reverse the whole array
     arr1.reverse()
 
-# Input array and K value
+# Input array and K values
 arr = [1, 2, 3, 4, 5]
 K = 2
 
@@ -170,7 +170,7 @@ print(list(m))
 
 print("---------------------------")
 
-# Removing duplicates from unsorted array
+# Removing duplicates from an unsorted array
 
 def un_sorted_dup(num):
     seen_dup = set()
@@ -196,7 +196,7 @@ print(Add)
 
 print("---------------------------")
 
-# Find repeating element in array
+# Find a repeating element in an array
 
 rep_arr = [1,1,0]
 seen = set()
@@ -211,7 +211,7 @@ print(list(repeating))
 
 print("---------------------------")
 
-# Find non-repeating element in array
+# Find a non-repeating element in an array
 non_rep_arr = [1,2,-1,1,3,1]
 non_repeating = {}
 
@@ -353,3 +353,36 @@ output = Factorial(fac)
 print("The factorial of number is: ", output)
 
 print("---------------------------")
+
+# String Palindrome
+str8 = input("Enter the string: ")
+str8 = (str8.replace(" ", "").lower())
+rev = str8[::-1]
+if str8 == rev:
+    print("String is palindrome.")
+else:
+    print("String is not palindrome.")
+
+print("---------------------------")
+
+array = [1,2,3,4,5]
+k = 3
+for i in range(1, len(array)+1):
+    if array[i] == k:
+        print("The answer is ",i)
+        break
+
+print("---------------------------")
+
+# Input: arr1[]= [1,3,4,5,2]
+#        arr2[]= [2,4,3,1,7,5,15]
+# Output: arr1[] is a subset of arr2[]
+
+arr1 = [1,3,4,5,2]
+arr2= [2,4,3,1,7,5,15]
+
+arr1 = set(arr1)
+arr2 = set(arr2)
+
+if arr1.issubset(arr2):
+    print("arr1[] is a subset of arr2[]")
