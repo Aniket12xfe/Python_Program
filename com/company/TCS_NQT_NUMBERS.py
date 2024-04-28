@@ -96,3 +96,44 @@ else:
 
 print("------------------------------------")
 
+a1 = 13
+if a1 % 2 == 0:
+    print("Even number.")
+else:
+    print("Odd number.")
+
+print("------------------------------------")
+
+a2 = -6
+if a2 >= 0:
+    print("Positive.")
+else:
+    print("Negative.")
+
+print("------------------------------------")
+
+N = 5
+sum1 = 0
+for i in range(N+1):
+    sum1 += i
+print(sum1)
+
+print("------------------------------------")
+
+def binary_to_decimal(binary):
+    decimal = 0
+    power = 0
+    while binary > 0:
+        digit = binary % 10
+
+        decimal = decimal + digit * (2 ** power)
+
+        binary //= 10
+
+        power += 1
+    return decimal
+
+binary_number = 1011
+decimal_number = binary_to_decimal(binary_number)
+print(decimal_number)
+
