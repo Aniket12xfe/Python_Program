@@ -77,7 +77,7 @@ def find_sub_array(a, t):
             return a[start: end + 1]
         end = end + 1
 
-    return
+    return None
 
 
 a = [3,4,-1,4]

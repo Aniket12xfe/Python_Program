@@ -121,19 +121,76 @@ print(sum1)
 print("------------------------------------")
 
 def binary_to_decimal(binary):
-    decimal = 0
+    decimal1 = 0
     power = 0
     while binary > 0:
         digit = binary % 10
 
-        decimal = decimal + digit * (2 ** power)
+        decimal1 = decimal1 + digit * (2 ** power)
 
         binary //= 10
 
         power += 1
-    return decimal
+    return decimal1
 
 binary_number = 1011
 decimal_number = binary_to_decimal(binary_number)
 print(decimal_number)
 
+print("------------------------------------")
+
+def binary_to_octal(binary):
+    octal = 0
+    decimal = 0
+    power = 0
+
+    # Convert binary to decimal
+    while binary > 0:
+        digit = binary % 10
+        decimal += digit * (2 ** power)
+        binary //= 10
+        power += 1
+
+    # Convert decimal to octal
+    power = 0
+    while decimal > 0:
+        digit = decimal % 8
+        octal += digit * (10 ** power)
+        decimal //= 8
+        power += 1
+
+    return octal
+
+# Example usage
+binary_number = 1100110
+octal_number = binary_to_octal(binary_number)
+print(octal_number)
+
+print("------------------------------------")
+
+def decimal_to_binary(Decimal):
+    binary = 0
+    power = 0
+    while Decimal > 0:
+        digit = Decimal % 2
+        binary += digit * (10 ** power)
+        Decimal //= 2
+        power += 1
+    return binary
+
+decimal = 15
+binary_num = decimal_to_binary(decimal)
+print(binary_num)
+
+print("------------------------------------")
+
+def All_number_product(Numm):
+    lst = [int(d) for d in str(Numm)]
+    prod = 1
+    for i in lst:
+        prod = prod * i
+    return int(prod)
+
+Numm = 5244
+product = All_number_product(Numm)
+print(product)
