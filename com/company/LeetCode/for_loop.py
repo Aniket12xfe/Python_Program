@@ -1,10 +1,10 @@
-name = "Aniket"
+name = "Anime"
 for i in name:
     print(i)
 
 
-colour = ['red', 'white', 'Blue', 'Yellow']
-for x in colour:
+color = ['red', 'white', 'Blue', 'Yellow']
+for x in color:
     print(x, end=" ")
 
 
