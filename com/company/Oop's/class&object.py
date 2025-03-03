@@ -19,6 +19,10 @@ class Student:
         self.marks = marks   # obj attribute > class attribute
         # print("Student full name adding into database..")
 
+    @staticmethod
+    def hello():
+        print("Hello Aniket")
+
     def PassOrFail(self):
         if self.marks < 27:
             print("Student is Fail,",self.name)
@@ -40,3 +44,4 @@ print("Student Name is",s2.name)
 print("Student Marks in Maths is",s2.marks)
 print("Student College Name is",s2.college_name)
 s2.PassOrFail()
+s2.hello()
