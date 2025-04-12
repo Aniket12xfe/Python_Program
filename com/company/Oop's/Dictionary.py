@@ -33,23 +33,58 @@
 
 # print(info)
 
-mydict = {
-    "name" : "Aniket",
-    "age" : 21,
-    "gender" : "male",
-    "subjects" : {
-        "Math" : 90,
-        "Physics" : 85,
-        "Chemistry" : 88,
-        "English" : 92,
-        "Hindi" : 95
-    }
+# mydict = {
+#     "name" : "Aniket",
+#     "age" : 21,
+#     "gender" : "male",
+#     "subjects" : {
+#         "Math" : 90,
+#         "Physics" : 85,
+#         "Chemistry" : 88,
+#         "English" : 92,
+#         "Hindi" : 95
+#     }
+# }
+#
+# print(mydict)
+#
+# subject_scores = mydict["subjects"].values()
+# total_score = sum(subject_scores)
+# total_subjects = len(subject_scores)
+# print("Total marks of the student is", total_score)
+# print("Percentage of the student is", (total_score/total_subjects))
+
+dic = {
+    "Name": "Chaudhari God",
+    "marks" : 333,
+    "Neha" : 356
+}
+# print(type(dic))
+# print(dic["Neha"])
+# print(dic.keys())
+# print(dic.values())
+#
+# for i in dic.keys():
+#     print(dic[i])
+# for i in dic.keys():
+#     print(f"the value corresponding to {i} is {dic[i]}")
+
+
+ep1 = {
+    122 : 85,
+    123 : 45,
+    145 : 69,
+    650 : 90,
 }
 
-print(mydict)
+ep2 = {
+    222 : 56,
+    566 : 90
+}
 
-subject_scores = mydict["subjects"].values()
-total_score = sum(subject_scores)
-total_subjects = len(subject_scores)
-print("Total marks of the student is", total_score)
-print("Percentage of the student is", (total_score/total_subjects))
+# ep1.update(ep2)
+# ep1.pop(122)
+# ep1.popitem()
+# del ep1
+# del ep1[122]
+print(ep1)
